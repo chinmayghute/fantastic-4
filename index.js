@@ -1,12 +1,12 @@
 var http = require('http');
 
+require('dotenv-extended').load();
 
-
-
+var myConfig = require('dotenv-extended').load();
 var server = http.createServer(function (request, response) {
 
     response.writeHead(200, { "Content-Type": "text/plain" });
-    response.end("hello");
+    response.end(myConfig.USERNAME);
 
 });
 

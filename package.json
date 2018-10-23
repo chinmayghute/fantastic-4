@@ -9,7 +9,6 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "dotenv": "^6.1.0",
         "dotenv-extended": "^2.3.0"
     }
 }

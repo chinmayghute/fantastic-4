@@ -9,6 +9,10 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "dotenv-extended": "^2.3.0"
+        "body-parser": "^1.18.3",
+        "cookie-parser": "^1.4.3",
+        "dotenv-extended": "^2.3.0",
+        "express": "^4.16.4",
+        "multer": "^1.4.1"
     }
 }

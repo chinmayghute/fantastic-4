@@ -1,13 +1,12 @@
 require('dotenv-extended').load();
-const http = require('http');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const server = http.createServer(function (request, response) {
-    response.writeHead(200, { "Content-Type": "text/plain" });
-    response.end(process.env.USER);
-});
-console.log(process.env.PORT);
-const port = process.env.PORT || 1337;
-console.log(port);
-server.listen(port);
+app.get('/', (req, res) => res.send(process.env.USER))
 
-console.log("Server running at http://localhost:%d", port);
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+
+
+require('dotenv-extended').load();
